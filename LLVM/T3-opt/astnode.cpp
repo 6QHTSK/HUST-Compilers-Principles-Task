@@ -50,7 +50,7 @@ void InitializeModuleAndPassManager() {
   theFPM = std::make_unique<legacy::FunctionPassManager>(theModule.get());
 
   // Promote allocas to registers.
-  //theFPM->add(createPromoteMemoryToRegisterPass());
+  theFPM->add(createPromoteMemoryToRegisterPass());
   // Do simple "peephole" optimizations and bit-twiddling optzns.
   //theFPM->add(createInstructionCombiningPass());
   // Reassociate expressions.
@@ -949,7 +949,7 @@ Value *NExtDefFunDec::codegen() {
     verifyFunction(*f);
 
     // Run the optimizer on the function.
-    // theFPM->run(*f);
+    theFPM->run(*f);
     return f;
   }
   // Error reading body, remove function.
