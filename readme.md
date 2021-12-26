@@ -1,8 +1,8 @@
-## [Flex & Bison 入门](/)
+## [Flex & Bison 入门](/flexBisonIntro)
 
 华中科技大学2021年编译原理实验1任务记录
 
-## [MiniC词法](/MiniCTask)
+## [MiniC词法](/MiniCLexical)
 
 华中科技大学2021年编译原理实验2任务记录
 
@@ -16,7 +16,7 @@
 
 [详细题解](/LLVM)
 
-## [LLVM优化](/LLVM/T4)
+## [LLVM优化](/LLVM/LLVMPass)
 
 华中科技大学2021年编译原理实验5任务记录
 
